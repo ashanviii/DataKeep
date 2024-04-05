@@ -21,10 +21,10 @@ export default function Home() {
     </SignOutButton>
     </SignedOut>
 
-    {files?.maps((file) => {
+    {files?.map((file) => {
       return <div key={file._id}>{file.name}</div>;
     })}
-
+  
     <Button 
      onClick={() => {
       createFile({
