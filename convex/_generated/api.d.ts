@@ -8,6 +8,14 @@
  * To regenerate, run `npx convex dev`.
  * @module
  */
+export declare const api: FilterApi<
+  typeof fullApi,
+  FunctionReference<any, "public">
+> & {
+  files: {
+    createFile: FunctionReference<any, "public">;
+  };
+};
 
 import type {
   ApiFromModules,
